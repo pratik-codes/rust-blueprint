@@ -1,0 +1,156 @@
+# Getting Started
+
+This guide will help you install Rust Blueprint and create your first project.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Rust** (1.70 or later) - [Install Rust](https://rustup.rs/)
+- **Git** - [Install Git](https://git-scm.com/downloads)
+
+## Installation
+
+Install Rust Blueprint using Cargo:
+
+```bash
+cargo install rust-blueprint
+```
+
+Or build from source:
+
+```bash
+git clone https://github.com/rust-blueprint/rust-blueprint
+cd rust-blueprint
+cargo install --path .
+```
+
+## Creating Your First Project
+
+### Interactive Mode (Recommended)
+
+The easiest way to create a new project is using the interactive mode:
+
+```bash
+rust-blueprint create
+```
+
+This will guide you through:
+
+1. **Project Name**: Choose a name for your project
+2. **Framework Selection**: Pick from Axum, Actix Web, Rocket, etc.
+3. **Database Setup**: Select your preferred database (optional)
+4. **Advanced Features**: Add Docker, CI/CD, GraphQL, etc.
+
+### Command Line Mode
+
+For automation or if you know exactly what you want:
+
+```bash
+rust-blueprint create --name my-api --framework axum --database postgres
+```
+
+### Available Options
+
+```bash
+rust-blueprint create --help
+```
+
+Options:
+- `--name, -n` - Project name
+- `--framework, -f` - Web framework (axum, actix-web, rocket, warp, tide, poem)
+- `--database, -d` - Database (postgres, mysql, sqlite, mongodb, redis, scylladb)
+- `--features` - Additional features (docker, github-actions, graphql, websocket, telemetry)
+- `--no-interactive` - Skip interactive prompts
+- `--git` - Initialize git repository (default: true)
+
+## Project Structure
+
+After creating a project, you'll have:
+
+```
+my-api/
+├── Cargo.toml           # Dependencies and project metadata
+├── .env.example         # Environment variables template
+├── README.md            # Project documentation
+├── src/
+│   ├── main.rs          # Application entry point
+│   ├── config.rs        # Configuration management
+│   ├── error.rs         # Error handling
+│   ├── api/             # API routes and handlers
+│   │   ├── mod.rs
+│   │   └── health.rs
+│   ├── db/              # Database models and queries
+│   └── middleware/      # Custom middleware
+├── tests/               # Integration tests
+└── migrations/          # Database migrations (if database selected)
+```
+
+## Running Your Application
+
+1. **Copy environment variables**:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Edit `.env`** with your configuration
+
+3. **Run database migrations** (if applicable):
+   ```bash
+   cargo sqlx migrate run
+   ```
+
+4. **Start the development server**:
+   ```bash
+   cargo run
+   ```
+
+5. **Visit** http://localhost:8080
+
+## Development Workflow
+
+### Hot Reloading
+
+For development with automatic recompilation:
+
+```bash
+cargo install cargo-watch
+cargo watch -x run
+```
+
+### Running Tests
+
+```bash
+# Run all tests
+cargo test
+
+# Run with output
+cargo test -- --nocapture
+```
+
+### Code Formatting
+
+```bash
+# Format code
+cargo fmt
+
+# Check formatting
+cargo fmt -- --check
+```
+
+### Linting
+
+```bash
+# Run clippy
+cargo clippy
+
+# Fix warnings
+cargo clippy --fix
+```
+
+## Next Steps
+
+- [CLI Reference](/docs/cli) - Learn about all CLI commands
+- [Framework Guide](/docs/frameworks) - Deep dive into each framework
+- [Database Guide](/docs/databases) - Database configuration and best practices
+- [Deployment Guide](/docs/guides/deployment) - Deploy your application 

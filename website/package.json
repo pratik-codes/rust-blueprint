@@ -1,0 +1,48 @@
+{
+  "name": "rust-blueprint-website",
+  "version": "1.0.0",
+  "description": "Rust Blueprint - Blazingly fast project scaffolding for Rustaceans",
+  "private": true,
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "rimraf .next && next dev",
+    "build": "next build",
+    "prebuild": "panda codegen",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ark-ui/react": "5.7.0",
+    "@pandacss/preset-panda": "0.51.0",
+    "@pandacss/token-dictionary": "0.51.0",
+    "bright": "0.8.6",
+    "flexsearch": "0.7.43",
+    "focus-visible": "5.2.1",
+    "git-url-parse": "14.0.0",
+    "react-icons": "5.3.0",
+    "intersection-observer": "0.12.2",
+    "match-sorter": "6.3.4",
+    "next": "14.2.26",
+    "next-seo": "6.6.0",
+    "next-themes": "0.4.6",
+    "nextra": "2.13.4",
+    "outdent": " ^0.8.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "1.6.5",
+    "scroll-into-view-if-needed": "3.1.0",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "0.51.0",
+    "@pandacss/postcss": "0.51.0",
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.4.49",
+    "prettier": "3.2.5",
+    "rimraf": "5.0.5",
+    "eslint": "8.57.0",
+    "typescript": "5.3.3"
+  }
+}

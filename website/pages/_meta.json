@@ -1,0 +1,28 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "title": "Documentation",
+    "type": "page"
+  },
+  "--- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "github_link": {
+    "title": "GitHub →",
+    "href": "https://github.com/rust-blueprint/rust-blueprint",
+    "newWindow": true
+  },
+  "discord_link": {
+    "title": "Discord →",
+    "href": "https://discord.gg/rust-blueprint",
+    "newWindow": true
+  }
+}
