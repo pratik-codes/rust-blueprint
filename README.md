@@ -1,14 +1,12 @@
 <div align="center">
-  <img src="./assets/logo.png" alt="Rust Blueprint Logo" width="400"/>
+  <img src="https://github.com/pratik-codes/rust-blueprint/blob/main/public/blueprint-cover.png" alt="Rust Blueprint Logo" width="400"/>
   
   # 🦀 Rust Blueprint
   
   **Blazingly fast project scaffolding for Rustaceans**
   
-  [![Crates.io](https://img.shields.io/crates/v/rust-blueprint.svg)](https://crates.io/crates/rust-blueprint)
-  [![CI](https://github.com/rust-blueprint/rust-blueprint/workflows/CI/badge.svg)](https://github.com/rust-blueprint/rust-blueprint/actions)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Downloads](https://img.shields.io/crates/d/rust-blueprint.svg)](https://crates.io/crates/rust-blueprint)
+
 </div>
 
 ---
