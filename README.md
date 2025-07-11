@@ -1,10 +1,11 @@
 <div align="center">
   <img src="https://github.com/pratik-codes/rust-blueprint/blob/main/public/blueprint-cover.png" alt="Rust Blueprint Logo" width="400"/>
   
-  # 🦀 Rust Blueprint
+  # 🦀 Rust Blueprint 
   
   **Blazingly fast project scaffolding for Rustaceans**
   
+  [![Status: In Progress](https://img.shields.io/badge/status-in--progress-orange.svg)](#)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
